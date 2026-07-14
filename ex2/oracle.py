@@ -1,6 +1,16 @@
 import os
 import sys
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    print("ERROR: python-dotenv is not installed.")
+    print()
+    print("Install it with pip:")
+    print("    pip install python-dotenv")
+    print()
+    print("Or with Poetry:")
+    print("    poetry add python-dotenv")
+    sys.exit(1)
 
 # Load variables from .env if it exists
 load_dotenv()
