@@ -81,7 +81,7 @@ def main():
 
     plt.figure(figsize=(8, 4))
     plt.plot(df["Time"], df["Signal"])
-    plt.tittle("Matrix Signal Analysis")
+    plt.title("Matrix Signal Analysis")
     plt.xlabel("Time")
     plt.ylabel("Signal Strength")
     plt.grid(True)
